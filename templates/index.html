@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cardio Disease Prediction</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css">
+
+  <style type="text/css">
+    
+    body {font-family: 'Open Sans', sans-serif !important;}
+    label{font-family: sans-serif; font-size: 18px; margin-top: 15px;}
+    .container-fluid{padding-left: 0px; padding-right:0px;}
+    .heading{background-color: #22A39F;color: #fff; padding: 30px; margin-bottom: 30px; text-align: center;}
+    .form-control(margin-bottom: 40px;)
+    .btn-primary{
+
+  </style>>
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class ='heading'>
+      <h2><strong> Cardio Disease Prediction </strong></h2>
+       <hr style="width: 50%;">
+    </div>
+     
+     <div class="row">
+      <div class="column" style=" width: 30%; margin: 10px 5% 10px 15%">
+
+        <form action="/predict" method = "post" >
+            <div class="form-group">
+              <label>Age:</label>
+              <input type="number" class="form-control" id="age" placeholder="Enter age (in years)" name="age">
+            </div>
+
+            <div class="form-group">
+              <label>Gender:</label>
+              <input type="number" class="form-control" placeholder="Enter Gender (1 for male, 2 for Female)" name="gender">
+            </div>
+
+            <div class="form-group">
+              <label>Height:</label>
+              <input type="number" class="form-control" placeholder="Enter height (in cm) " name="height">
+            </div>
+
+            
+            <div class="form-group">
+              <label >Weight:</label>
+              <input type="number" class="form-control" placeholder="Enter weight (in Kg)" name="weight">
+            </div>
+
+            <div class="form-group">
+              <label >Blood Pressure Lower (Diastolic) value:</label>
+              <input type="number" class="form-control" placeholder="Enter BP Lower (Diastolic) value (in mmHg) " name="ap_lo">
+            </div>
+
+            <div class="form-group">
+              <label >Blood Pressure Upper (Systolic) value::</label>
+              <input type="number" class="form-control" placeholder="Enter BP Upper (Systolic) value (in mmHg) " name="ap_hi">
+            </div>
+
+        </div>
+
+
+         <div class="column" style=" width: 30%; margin: 10px 10% 10px 5%">
+
+            <div class="form-group">
+              <label >Cholesterol:</label>
+              <input type="number" class="form-control" placeholder="1 - Normal, 2 - Above Normal, 3 -  High " name="cholesterol">
+            </div>
+
+            <div class="form-group">
+              <label >Glucose:</label>
+              <input type="number" class="form-control" placeholder="1 - Normal, 2 - Above Normal, 3 -  High " name="glucose">
+            </div>
+
+            <div class="form-group">
+              <label >Smoking:</label>
+              <input type="number" class="form-control" placeholder="1 - Active, else - 0" name="smoking">
+            </div>
+
+            <div class="form-group">
+              <label >Alcohol Intake:</label>
+              <input type="number" class="form-control" placeholder="1 - Active, else - 0" name="alcohol">
+            </div>
+
+            <div class="form-group">
+              <label >Physical Activity:</label>
+              <input type="number" class="form-control" placeholder="1 - Active, else - 0" name="phy_activity">
+            </div>
+
+             <div class="form-group">
+              <label >temp:</label>
+              <input type="number" class="form-control" placeholder="1 - Active, else - 0" name="temp_cardio">
+            </div>
+
+          </div>
+
+       <button type="submit" class="btn btn-primary" style="margin-left: 45%; margin-right: 10%; margin-top:50px; margin-bottom: 100px;"> Check Proability </button>    
+
+      </form>
+     </div>
+    </div>
+    <br>
+    <br>
+   </div>
+   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+ </body>
+</html>
+
+	
