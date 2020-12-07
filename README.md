@@ -1,2 +1,2 @@
-# ML_cardio_disease_prediction
+# ML cardiac disease prediction
 Predict the heart disease probability of a person based on various features
